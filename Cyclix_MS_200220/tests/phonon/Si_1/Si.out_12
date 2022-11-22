@@ -1,0 +1,107 @@
+***************************************************************************
+*                          M-SPARC (Feb 20, 2020)                         *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 03-Apr-2022  Start time: 22:59:57                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 20.000000 0.392699 4.000500 
+TWIST_ANGLE: 0.049081 
+FD_GRID: 80 19 18
+FD_ORDER: 12
+BC: D C H
+KPOINT_GRID: 1 1 12
+KPOINT_SHIFT: 0 0 5.000000e-01
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.001000000
+CHEB_DEGREE: 90
+NSTATES: 10
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-06
+TOL_POISSON: 1.00E-08
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-08
+MIXING_VARIABLE: potential
+MIXING_PRECOND: none
+MIXING_PARAMETER: 0.30
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART_FREQ: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: ../tests/phonon/Si_1/Si.out_12
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.250000 (Bohr)
+Mesh spacing in y-direction        :  0.243125 (Bohr)
+Mesh spacing in z direction        :  0.222250 (Bohr)
+Number of symmetry adapted k-points:  6
+Output printed to                  :  ../tests/phonon/Si_1/Si.out_12
+Total number of atom types         :  1
+Total number of atoms              :  2
+Total number of electrons          :  8
+Atom type 1  (valence electrons)   :  Si 4
+Pseudopotential                    :  Si.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  6.86 0.76 6.89
+Number of atoms of type 1          :  2
+Estimated total memory usage       :  178.80 MB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -2.9902602847E+00        4.156E-01        44.860
+2            -3.0543731746E+00        1.435E-01        15.395
+3            -3.0704370666E+00        6.055E-02        14.607
+4            -3.0718987011E+00        4.018E-02        12.734
+5            -3.0712587775E+00        5.436E-02        11.378
+6            -3.0630192923E+00        1.059E-01        14.270
+7            -3.0714319552E+00        2.763E-02        12.186
+8            -3.0719620356E+00        1.572E-02        12.540
+9            -3.0722332357E+00        3.219E-03        12.625
+10           -3.0722465931E+00        7.702E-04        11.954
+11           -3.0722435557E+00        1.255E-03        9.966
+12           -3.0722444252E+00        3.973E-04        11.069
+13           -3.0722440900E+00        2.096E-04        11.672
+14           -3.0722442703E+00        3.739E-05        10.821
+15           -3.0722443369E+00        2.034E-05        10.449
+16           -3.0722442882E+00        2.080E-05        9.349
+17           -3.0722442941E+00        3.172E-06        10.860
+18           -3.0722442392E+00        9.264E-07        8.208
+Total number of SCF: 18    
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -3.0722442392E+00 (Ha/atom)
+Total free energy                  : -6.1444884785E+00 (Ha)
+Band structure energy              : -3.9619476061E+00 (Ha)
+Exchange correlation energy        : -3.0410281812E+00 (Ha)
+Self and correction energy         : -2.5541822775E+01 (Ha)
+Entropy*kb*T                       : -2.0768969105E-04 (Ha)
+Fermi level                        : -1.6961895485E-01 (Ha)
+Average force                      :  1.8645069750E-01 (Ha/Bohr)
+Maximum force                      :  1.8645109542E-01 (Ha/Bohr)
+Time for force calculation         :  3.934 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  1451.183 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Acknowledgements: U.S. DOE (DE-SC0019410); NSF (1333500,1553212)    *
+***************************************************************************
+                                                                           

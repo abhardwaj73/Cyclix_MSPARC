@@ -1,0 +1,85 @@
+***************************************************************************
+*                          M-SPARC (Feb 20, 2020)                         *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 29-Dec-2021  Start time: 13:23:30                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 10.260000 10.260000 10.260000 
+FD_GRID: 20 20 20
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.000100000
+CHEB_DEGREE: 17
+NSTATES: 24
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-06
+TOL_POISSON: 1.00E-08
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-08
+MIXING_VARIABLE: potential
+MIXING_PRECOND: none
+MIXING_PARAMETER: 0.30
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART_FREQ: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: ../tests/Si/Si8.out_3
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing                       :  0.513000 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  ../tests/Si/Si8.out_3
+Total number of atom types         :  1
+Total number of atoms              :  8
+Total number of electrons          :  32
+Atom type 1  (valence electrons)   :  Si 4
+Pseudopotential                    :  Si.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  8.21 8.21 8.21
+Number of atoms of type 1          :  8
+Estimated total memory usage       :  28.20 MB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -3.9155142719E+00        4.154E-02        1.606
+2            -3.9189943924E+00        2.328E-02        0.996
+3            -3.9200972849E+00        9.214E-03        1.003
+4            -3.9203055358E+00        2.077E-03        0.984
+5            -3.9203268841E+00        1.029E-03        0.980
+6            -3.9203326247E+00        5.011E-04        0.987
+7            -3.9203340075E+00        2.177E-04        0.964
+8            -3.9203343491E+00        7.674E-05        0.963
+9            -3.9203344301E+00        4.302E-05        0.979
+10           -3.9203344509E+00        1.614E-05        0.980
+11           -3.9203344572E+00        7.523E-06        0.945
+12           -3.9203344587E+00        4.130E-06        0.967
+13           -3.9203344593E+00        1.775E-06        0.978
+14           -3.9203344600E+00        1.148E-06        0.980
+15           -3.9203344573E+00        2.422E-07        0.971
+Total number of SCF: 15    
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -3.9203344573E+00 (Ha/atom)
+Total free energy                  : -3.1362675658E+01 (Ha)
+Band structure energy              :  1.5062486651E+00 (Ha)
+Exchange correlation energy        : -9.7243648080E+00 (Ha)
+Self and correction energy         : -1.0224403834E+02 (Ha)
+Entropy*kb*T                       : -5.3281917659E-12 (Ha)
+Fermi level                        :  2.3999144511E-01 (Ha)

@@ -1,0 +1,19 @@
+#PBS -N MoS2
+#PBS -q hive-interact 
+#PBS -o output.sparc 
+#PBS -j oe 
+#PBS -l nodes=3:ppn=24 
+#PBS -l mem=400gb 
+#PBS -l walltime=1:00:00 
+#PBS -M abhardwaj73@gatech.edu 
+MYPROCS=`wc -l < ${PBS_NODEFILE}` 
+module purge 
+module load intel/19.0.3 
+module load mvapich2/2.3.1 
+module load fftw/3.3.8-mva2 
+
+ulimit -s unlimited 
+
+cd ${PBS_O_WORKDIR} 
+echo $PWD 
+mpirun -env MV2_ENABLE_AFFINITY=1 -env MV2_CPU_BINDING_POLICY=bunch -np $MYPROCS ./sparc -name MoS2 -log_summary > MoS2.log

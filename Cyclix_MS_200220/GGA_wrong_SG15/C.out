@@ -1,0 +1,95 @@
+***************************************************************************
+*                          M-SPARC (Feb 20, 2020)                         *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 31-Oct-2022  Start time: 15:07:37                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 24.000000 0.418879 4.647785 
+FD_GRID: 120 40 23
+FD_ORDER: 12
+BC: D C P
+KPOINT_GRID: 1 10 1
+KPOINT_SHIFT: 0 0 0
+ELEC_TEMP_TYPE: gaussian
+SMEARING: 0.007349864
+CHEB_DEGREE: 35
+NSTATES: 15
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 1
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-04
+TOL_POISSON: 1.00E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-06
+MIXING_VARIABLE: potential
+MIXING_PRECOND: none
+MIXING_PARAMETER: 0.30
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART_FREQ: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 1
+PRINT_DENSITY: 0
+OUTPUT_FILE: /storage/hive/scratch/6/abhardwaj73/Spin_GGA_check/MSPARC/Cyclix_MS_200220/GGA_wrong_SG15/C.out
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.200000 (Bohr)
+Mesh spacing in y-direction        :  0.201255 (Bohr)
+Mesh spacing in z direction        :  0.202078 (Bohr)
+Number of symmetry adapted k-points:  8
+Output printed to                  :  /storage/hive/scratch/6/abhardwaj73/Spin_GGA_check/MSPARC/Cyclix_MS_200220/GGA_wrong_SG15/C.out
+Total number of atom types         :  1
+Total number of atoms              :  4
+Total number of electrons          :  16
+Atom type 1  (valence electrons)   :  C 4
+Pseudopotential                    :  ./C.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  1.80 0.09 1.82
+Number of atoms of type 1          :  4
+Estimated total memory usage       :  1.10 GB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -5.1890843106E+00        7.691E-01        357.751
+2            -5.6282259383E+00        2.652E-01        73.843
+3            -5.6587709545E+00        3.556E-01        73.600
+4            -5.6650560263E+00        2.322E-01        72.637
+5            -5.6663230279E+00        1.666E-01        71.814
+6            -5.6669926290E+00        9.514E-02        71.491
+7            -5.6672823031E+00        2.992E-02        71.868
+8            -5.6673229085E+00        1.884E-02        69.664
+9            -5.6673461960E+00        3.584E-03        71.070
+10           -5.6673516425E+00        2.574E-03        71.869
+11           -5.6673473832E+00        1.220E-03        69.822
+12           -5.6673474023E+00        5.580E-04        69.063
+13           -5.6673477294E+00        1.767E-04        69.317
+14           -5.6673495504E+00        5.724E-05        69.439
+Total number of SCF: 14    
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -5.6673495504E+00 (Ha/atom)
+Total free energy                  : -2.2669398201E+01 (Ha)
+Band structure energy              : -7.7750700076E+00 (Ha)
+Exchange correlation energy        : -7.0627432336E+00 (Ha)
+Self and correction energy         : -5.8658479476E+01 (Ha)
+Entropy*kb*T                       : -3.4247346157E-07 (Ha)
+Fermi level                        : -1.1835921920E-01 (Ha)
+Average force                      :  1.2098598317E-01 (Ha/Bohr)
+Maximum force                      :  1.2119744877E-01 (Ha/Bohr)
+Time for force calculation         :  17.610 (sec)
+Stress (Ha/Bohr)                   :
+  9.6246674488E-01 
+Stress equiv. all periodic (GPa)   :
+  9.7708922375E+00 
+Max stress                         :  9.6246674488E-01 (Ha/Bohr)
+Max stress equiv. all periodic     :  9.7708922375E+00 (GPa)
+Time for stress calculation        :  3.838 (sec)

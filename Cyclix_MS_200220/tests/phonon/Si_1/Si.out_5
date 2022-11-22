@@ -1,0 +1,97 @@
+***************************************************************************
+*                          M-SPARC (Feb 20, 2020)                         *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 23-Mar-2022  Start time: 14:38:25                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 20.000000 0.392699 4.000500 
+TWIST_ANGLE: 0.049081 
+FD_GRID: 50 12 10
+FD_ORDER: 12
+BC: D C H
+KPOINT_GRID: 1 1 2
+KPOINT_SHIFT: 0 0 0
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.001000000
+CHEB_DEGREE: 80
+NSTATES: 10
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-05
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: potential
+MIXING_PRECOND: none
+MIXING_PARAMETER: 0.30
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART_FREQ: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: ../tests/phonon/Si_1/Si.out_5
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.400000 (Bohr)
+Mesh spacing in y-direction        :  0.384948 (Bohr)
+Mesh spacing in z direction        :  0.400050 (Bohr)
+Number of symmetry adapted k-points:  2
+Output printed to                  :  ../tests/phonon/Si_1/Si.out_5
+Total number of atom types         :  1
+Total number of atoms              :  2
+Total number of electrons          :  8
+Atom type 1  (valence electrons)   :  Si 4
+Pseudopotential                    :  Si.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  6.80 0.75 6.80
+Number of atoms of type 1          :  2
+Estimated total memory usage       :  24.56 MB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -2.9899275191E+00        3.969E-01        6.556
+2            -3.0454082353E+00        9.541E-02        2.111
+3            -3.0176124974E+00        1.710E-01        2.089
+4            -3.0198496213E+00        1.670E-01        1.980
+5            -3.0192262551E+00        1.904E-01        2.128
+6            -2.9975905930E+00        2.222E-01        2.075
+7            -3.0292090075E+00        1.716E-01        2.085
+8            -3.0230746473E+00        1.882E-01        2.030
+9            -3.0344895437E+00        1.226E-01        2.018
+10           -3.0414587313E+00        7.768E-02        2.060
+11           -3.0346727025E+00        1.309E-01        2.022
+12           -3.0415262254E+00        7.523E-02        2.049
+13           -3.0390503165E+00        9.669E-02        1.998
+14           -3.0417220865E+00        9.086E-02        1.966
+15           -3.0046950388E+00        1.767E-01        2.068
+16           -3.0364934506E+00        1.059E-01        2.029
+17           -3.0355054388E+00        9.742E-02        1.993
+18           -3.0418328179E+00        9.372E-02        2.006
+19           -3.0427679164E+00        8.782E-02        2.029
+20           -3.0420453569E+00        9.269E-02        1.924
+21           -3.0498500715E+00        4.048E-02        1.991
+22           -3.0510042769E+00        8.869E-03        1.993
+23           -3.0450231643E+00        7.415E-02        2.004
+24           -3.0039780091E+00        2.440E-01        2.050
+25           -3.0420664102E+00        9.091E-02        2.040
+26           -3.0289359331E+00        1.090E-01        2.038
+27           -3.0332492147E+00        1.183E-01        2.038
+28           -3.0423591465E+00        8.831E-02        2.040
+29           -3.0506415158E+00        2.914E-02        1.986
+30           -3.0278185961E+00        1.498E-01        1.986
+31           -3.0488948821E+00        4.727E-02        2.000
+32           -3.0515350507E+00        8.488E-03        2.005
+33           -3.0454368454E+00        6.991E-02        2.063
+34           -3.0519235334E+00        6.366E-03        1.987
+35           -3.0508275052E+00        2.956E-02        1.932

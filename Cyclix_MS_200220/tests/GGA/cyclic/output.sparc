@@ -1,0 +1,22 @@
+---------------------------------------
+Begin PBS Prologue Wed May  6 18:48:08 EDT 2020
+Job ID:     280299.sched-hive.pace.gatech.edu
+User ID:    skumar416
+Job name:   MoS2
+Queue:      hive-interact
+End PBS Prologue Wed May  6 18:48:08 EDT 2020
+---------------------------------------
+/storage/hive/project/ce-suryanarayana/skumar416/MOS_helical/GGA/cyclic
+---------------------------------------
+Begin PBS Epilogue Wed May  6 18:51:40 EDT 2020
+Job ID:     280299.sched-hive.pace.gatech.edu
+User ID:    skumar416
+Job name:   MoS2
+Resources:  nodes=3:ppn=24,mem=400gb,walltime=01:00:00,neednodes=3:ppn=24
+Rsrc Used:  cput=01:23:07,vmem=22414476kb,walltime=00:03:31,mem=6307936kb,energy_used=0
+Queue:      hive-interact
+Nodes:     
+atl1-1-01-017-5-r.pace.gatech.edu atl1-1-01-017-6-l.pace.gatech.edu 
+atl1-1-01-017-9-r.pace.gatech.edu
+End PBS Epilogue Wed May  6 18:51:40 EDT 2020
+---------------------------------------

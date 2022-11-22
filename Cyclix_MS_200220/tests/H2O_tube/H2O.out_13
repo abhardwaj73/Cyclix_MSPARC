@@ -1,0 +1,121 @@
+***************************************************************************
+*                          M-SPARC (Feb 20, 2020)                         *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 16-Aug-2020  Start time: 18:00:26                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 18.000000 0.571199 3.000000 
+FD_GRID: 72 28 12
+FD_ORDER: 12
+BC: D C P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.003674932
+CHEB_DEGREE: 31
+NSTATES: 8
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-04
+TOL_POISSON: 1.00E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-05
+MIXING_VARIABLE: potential
+MIXING_PRECOND: none
+MIXING_PARAMETER: 0.30
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART_FREQ: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: ../tests/H2O_tube/H2O.out_13
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.250000 (Bohr)
+Mesh spacing in y-direction        :  0.224399 (Bohr)
+Mesh spacing in z direction        :  0.250000 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  ../tests/H2O_tube/H2O.out_13
+Total number of atom types         :  2
+Total number of atoms              :  3
+Total number of electrons          :  8
+Atom type 1  (valence electrons)   :  H 1
+Pseudopotential                    :  H_GGA.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  2.00 0.17 2.00
+Number of atoms of type 1          :  2
+Atom type 2  (valence electrons)   :  O 6
+Pseudopotential                    :  O_GGA.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 2  :  6.00 0.51 6.00
+Number of atoms of type 2          :  1
+Estimated total memory usage       :  74.48 MB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -1.9434246163E+00        9.318E-01        2.335
+2            -5.2043268351E+00        1.737E-01        0.962
+3            -5.3674876618E+00        2.123E+00        0.936
+4            -5.4043151500E+00        1.878E+00        0.820
+5            -5.5438501758E+00        5.145E-01        0.949
+6            -5.7581975395E+00        4.906E-01        0.896
+7            -5.7635401311E+00        6.363E-01        0.780
+8            -5.7655845343E+00        6.314E-01        0.687
+9            -5.7646074900E+00        6.166E-01        0.777
+10           -5.0675115899E+00        1.372E+00        0.891
+11           -5.2171391264E+00        1.252E+00        0.797
+12           -5.4595406925E+00        1.065E+00        0.799
+13           -5.7411136802E+00        2.994E-01        0.894
+14           -5.7479978509E+00        2.666E-01        0.647
+15           -5.7558937480E+00        2.183E-01        0.688
+16           -5.7754377293E+00        1.883E-02        0.775
+17           -5.7754123165E+00        4.546E-02        0.704
+18           -5.7758069096E+00        1.163E-02        0.687
+19           -5.7754325852E+00        4.015E-02        0.610
+20           -5.7757807571E+00        4.734E-03        0.649
+21           -5.7758161639E+00        3.062E-03        0.407
+22           -5.7757960068E+00        1.245E-03        0.518
+23           -5.7758040924E+00        6.968E-04        0.352
+24           -5.7757928691E+00        5.630E-04        0.371
+25           -5.7757933743E+00        2.676E-04        0.389
+26           -5.7757878468E+00        1.728E-04        0.370
+27           -5.7757864593E+00        1.179E-04        0.277
+28           -5.7757847560E+00        5.690E-05        0.274
+Total number of SCF: 28    
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -5.7757847560E+00 (Ha/atom)
+Total free energy                  : -1.7327354268E+01 (Ha)
+Band structure energy              : -6.8149949893E+00 (Ha)
+Exchange correlation energy        : -3.9219223954E+00 (Ha)
+Self and correction energy         : -3.6121264851E+01 (Ha)
+Entropy*kb*T                       : -6.2548771589E-05 (Ha)
+Fermi level                        : -3.5883568770E-01 (Ha)
+Average force                      :  1.8124985289E-01 (Ha/Bohr)
+Maximum force                      :  2.2522996131E-01 (Ha/Bohr)
+Time for force calculation         :  0.404 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  22.316 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Acknowledgements: U.S. DOE (DE-SC0019410); NSF (1333500,1553212)    *
+***************************************************************************
+                                                                           

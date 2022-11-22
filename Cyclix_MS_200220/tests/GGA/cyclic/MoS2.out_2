@@ -1,0 +1,65 @@
+***************************************************************************
+*                          M-SPARC (Feb 20, 2020)                         *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 06-May-2020  Start time: 20:34:06                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 29.913816 0.369599 6.021298 
+FD_GRID: 100 50 30
+FD_ORDER: 12
+BC: D C P
+KPOINT_GRID: 1 1 10
+KPOINT_SHIFT: 0 0 0
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.001000000
+CHEB_DEGREE: 60
+NSTATES: 36
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 1
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-05
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: potential
+MIXING_PRECOND: none
+MIXING_PARAMETER: 0.30
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART_FREQ: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: ../tests/GGA/cyclic/MoS2.out_2
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.299138 (Bohr)
+Mesh spacing in y-direction        :  0.208584 (Bohr)
+Mesh spacing in z direction        :  0.200710 (Bohr)
+Number of symmetry adapted k-points:  6
+Output printed to                  :  ../tests/GGA/cyclic/MoS2.out_2
+Total number of atom types         :  2
+Total number of atoms              :  6
+Total number of electrons          :  52
+Atom type 1  (valence electrons)   :  Mo 14
+Pseudopotential                    :  ./Mo_GGA.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  6.71 0.21 6.62
+Number of atoms of type 1          :  2
+Atom type 2  (valence electrons)   :  S 6
+Pseudopotential                    :  ./S_GGA.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 2  :  6.61 0.21 6.42
+Number of atoms of type 2          :  4
+Estimated total memory usage       :  2.36 GB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)

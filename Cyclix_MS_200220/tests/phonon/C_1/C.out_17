@@ -1,0 +1,80 @@
+***************************************************************************
+*                          M-SPARC (Feb 20, 2020)                         *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 26-Jan-2022  Start time: 16:20:44                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 20.000000 0.392699 8.001000 
+FD_GRID: 100 24 42
+FD_ORDER: 12
+BC: D C P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.001000000
+CHEB_DEGREE: 60
+NSTATES: 15
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+TOL_SCF: 1.00E+00
+TOL_POISSON: 1.00E-02
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-02
+MIXING_VARIABLE: potential
+MIXING_PRECOND: none
+MIXING_PARAMETER: 0.30
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART_FREQ: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: ../tests/phonon/C_1/C.out_17
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.200000 (Bohr)
+Mesh spacing in y-direction        :  0.192474 (Bohr)
+Mesh spacing in z direction        :  0.190500 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  ../tests/phonon/C_1/C.out_17
+Total number of atom types         :  1
+Total number of atoms              :  4
+Total number of electrons          :  16
+Atom type 1  (valence electrons)   :  C 4
+Pseudopotential                    :  C.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  1.59 0.13 1.52
+Number of atoms of type 1          :  4
+Estimated total memory usage       :  330.89 MB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1             1.4733074425E+01        1.054E+00        24.193
+2            -4.9445738830E+00        1.339E+00        5.265
+3            -5.3658345064E+00        1.560E+00        4.741
+4            -5.5154490337E+00        1.443E+00        4.294
+5            -5.5320536344E+00        5.615E-01        4.705
+Total number of SCF: 5     
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -5.5320536344E+00 (Ha/atom)
+Total free energy                  : -2.2128214538E+01 (Ha)
+Band structure energy              : -2.5275505461E+01 (Ha)
+Exchange correlation energy        : -6.9864859518E+00 (Ha)
+Self and correction energy         : -4.3782141162E+01 (Ha)
+Entropy*kb*T                       : -1.3487709314E-05 (Ha)
+Fermi level                        : -1.1408423177E+00 (Ha)
+Average force                      :  1.3416521809E+00 (Ha/Bohr)
+Maximum force                      :  1.4604794900E+00 (Ha/Bohr)
+Time for force calculation         :  3.051 (sec)

@@ -1,0 +1,28 @@
+#=========================
+# format of ion file
+#=========================
+# ATOM_TYPE: <atom type name>
+# PSEUDO_POT: <path/to/pseudopotential/file>
+# N_TYPE_ATOM: <num of atoms of this type>
+# COORD:
+# <xcoord> <ycoord> <zcoord>
+# ...
+# RELAX:
+# <xrelax> <yrelax> <zrelax>
+# ...
+
+# Reminder: when changing number of atoms, change the RELAX flags accordingly
+#           as well.
+
+ATOM_TYPE: H                 # atom type
+PSEUDO_POT: H_GGA.psp8
+N_TYPE_ATOM: 2               # number of atoms of this type
+COORD:                       # coordinates follows
+12 0 0 
+11.626949060527737 2.968847511054275 0
+
+ATOM_TYPE: O               # atom type
+PSEUDO_POT: O_GGA.psp8
+N_TYPE_ATOM: 1               # number of atoms of this type
+COORD:                       # coordinates follows
+9.921976672293289 1.246747333852277 0

@@ -1,0 +1,125 @@
+***************************************************************************
+*                          M-SPARC (Feb 20, 2020)                         *
+*   Copyright (c) 2019 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                Date: 07-Apr-2022  Start time: 00:33:35                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 20.000000 0.392699 4.000500 
+TWIST_ANGLE: 0.049081 
+FD_GRID: 80 19 18
+FD_ORDER: 12
+BC: D C H
+KPOINT_GRID: 1 2 12
+KPOINT_SHIFT: 0 0 5.000000e-01
+ELEC_TEMP_TYPE: fermi-dirac
+SMEARING: 0.001000000
+CHEB_DEGREE: 100
+NSTATES: 10
+EXCHANGE_CORRELATION: LDA_PZ
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+TOL_SCF: 1.00E-05
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: potential
+MIXING_PRECOND: none
+MIXING_PARAMETER: 0.30
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART_FREQ: 0
+REFERENCE_CUTOFF: 0.50
+RHO_TRIGGER: 4
+FIX_RAND: 0
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: ../tests/phonon/Si_1/Si.out_17
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Mesh spacing in x-direction        :  0.250000 (Bohr)
+Mesh spacing in y-direction        :  0.243125 (Bohr)
+Mesh spacing in z direction        :  0.222250 (Bohr)
+Number of symmetry adapted k-points:  12
+Output printed to                  :  ../tests/phonon/Si_1/Si.out_17
+Total number of atom types         :  1
+Total number of atoms              :  2
+Total number of electrons          :  8
+Atom type 1  (valence electrons)   :  Si 4
+Pseudopotential                    :  Si_local.psp8
+lloc                               :  4
+Pseudocharge radii of atom type 1  :  6.64 0.74 6.67
+Number of atoms of type 1          :  2
+Estimated total memory usage       :  280.25 MB
+=====================================================================
+                    Self Consistent Field (SCF#1)                     
+=====================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -7.1005823482E+00        1.607E+00        83.362
+2            -7.3175290857E+00        8.974E-01        22.175
+3            -7.4319609176E+00        4.363E-01        21.354
+4            -7.3776864293E+00        5.286E-01        20.001
+5            -7.3708742864E+00        5.471E-01        20.392
+6            -7.3839006475E+00        5.315E-01        19.856
+7            -7.4307156527E+00        4.748E-01        20.709
+8            -7.4711079941E+00        3.235E-01        20.624
+9            -7.4011235581E+00        4.508E-01        20.515
+10           -7.3788614777E+00        4.866E-01        20.804
+11           -7.3613702165E+00        5.020E-01        19.629
+12           -7.4792969297E+00        2.787E-01        20.218
+13           -7.4671450080E+00        3.208E-01        21.084
+14           -7.4679004520E+00        3.324E-01        20.557
+15           -7.4813533521E+00        3.489E-01        20.715
+16           -7.4995128542E+00        1.278E-01        21.932
+17           -7.4852280464E+00        2.385E-01        20.116
+18           -7.4865411057E+00        2.242E-01        19.981
+19           -7.5003149310E+00        7.745E-02        20.375
+20           -7.4993759515E+00        1.138E-01        19.149
+21           -7.4997954467E+00        1.030E-01        19.607
+22           -7.4994003620E+00        9.926E-02        19.212
+23           -7.4997559530E+00        8.214E-02        19.984
+24           -7.5006694353E+00        1.784E-02        19.620
+25           -7.5002653551E+00        4.620E-02        19.581
+26           -7.5006396497E+00        1.200E-02        19.621
+27           -7.5006996577E+00        6.501E-03        19.782
+28           -7.5007195476E+00        3.515E-03        19.513
+29           -7.5007244145E+00        4.689E-03        20.505
+30           -7.5007269839E+00        2.215E-03        18.718
+31           -7.5007280387E+00        5.472E-04        19.994
+32           -7.5007284714E+00        3.386E-04        20.434
+33           -7.5007281666E+00        7.191E-05        18.661
+34           -7.5007281313E+00        6.181E-05        18.459
+35           -7.5007283442E+00        3.129E-05        18.028
+36           -7.5007281394E+00        9.333E-06        17.772
+Total number of SCF: 36    
+====================================================================
+                                Energy                              
+====================================================================
+Free energy per atom               : -7.5007281394E+00 (Ha/atom)
+Total free energy                  : -1.5001456279E+01 (Ha)
+Band structure energy              : -6.8178891834E+00 (Ha)
+Exchange correlation energy        : -3.7294601941E+00 (Ha)
+Self and correction energy         : -2.5541822773E+01 (Ha)
+Entropy*kb*T                       : -4.0467307035E-04 (Ha)
+Fermi level                        : -1.7588202963E-01 (Ha)
+Average force                      :  6.4938398636E-02 (Ha/Bohr)
+Maximum force                      :  6.4938495895E-02 (Ha/Bohr)
+Time for force calculation         :  5.697 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  3901.806 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Acknowledgements: U.S. DOE (DE-SC0019410); NSF (1333500,1553212)    *
+***************************************************************************
+                                                                           
